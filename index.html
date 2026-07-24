@@ -2,17 +2,29 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio personal de Santiago Zúñiga, desarrollador de software.">
-    <title>Santiago Zúñiga | Desarrollador</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portafolio de Santiago Zúñiga, desarrollador de software y estudiante de Ingeniería en Tecnologías de la Información."
+    >
+
+    <title>Santiago Zúñiga | Desarrollador de Software</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
         <nav>
-            <a href="#">Santiago Zúñiga</a>
+            <a class="logo" href="#">Santiago Zúñiga</a>
 
-            <ul>
+            <ul class="nav-links">
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
@@ -21,53 +33,117 @@
     </header>
 
     <main>
-        <section>
-            <p>Hola, soy</p>
+
+        <section class="hero">
+            <p class="hero-subtitle">Hola, soy</p>
+
             <h1>Santiago Zúñiga</h1>
+
             <h2>Desarrollador de software</h2>
 
-            <p>
-                Creo aplicaciones y sitios web orientados a resolver
-                problemas reales.
+            <p class="hero-description">
+                Desarrollo aplicaciones y sitios web orientados a resolver
+                problemas reales. Actualmente trabajo con Java, bases de
+                datos y tecnologías web.
             </p>
 
-            <a href="#proyectos">Ver proyectos</a>
+            <div class="buttons">
+                <a
+                    class="button button-primary"
+                    href="#proyectos"
+                >
+                    Ver proyectos
+                </a>
+
+                <a
+                    class="button button-secondary"
+                    href="#contacto"
+                >
+                    Contactarme
+                </a>
+            </div>
         </section>
 
         <section id="sobre-mi">
-            <h2>Sobre mí</h2>
+            <h2 class="section-title">Sobre mí</h2>
 
-            <p>
+            <p class="about-text">
                 Soy estudiante de Ingeniería en Tecnologías de la Información
-                e Innovación Digital. Actualmente desarrollo proyectos con
-                Java, bases de datos y tecnologías web.
+                e Innovación Digital. Me interesa el desarrollo de software,
+                el desarrollo web y la creación de soluciones para pequeños
+                negocios. Actualmente continúo fortaleciendo mis conocimientos
+                en Java, SQL, HTML, CSS y JavaScript.
             </p>
         </section>
 
         <section id="proyectos">
-            <h2>Proyectos</h2>
+            <h2 class="section-title">Proyectos</h2>
 
-            <article>
-                <h3>Sistema de registro de jugadores</h3>
+            <div class="projects-grid">
 
-                <p>
-                    Aplicación desarrollada en Java con registro, inicio de
-                    sesión, validaciones y conexión a una base de datos.
-                </p>
-            </article>
+                <article class="project-card">
+                    <h3>Sistema de jugadores</h3>
+
+                    <p>
+                        Aplicación de escritorio con registro, inicio de sesión,
+                        validaciones y conexión a una base de datos.
+                    </p>
+
+                    <span class="technologies">
+                        Java · Swing · SQL
+                    </span>
+                </article>
+
+                <article class="project-card">
+                    <h3>Portafolio personal</h3>
+
+                    <p>
+                        Sitio web responsive para presentar mis proyectos,
+                        conocimientos y medios de contacto.
+                    </p>
+
+                    <span class="technologies">
+                        HTML · CSS · JavaScript
+                    </span>
+                </article>
+
+                <article class="project-card">
+                    <h3>Próximo proyecto</h3>
+
+                    <p>
+                        Espacio reservado para una aplicación o sitio web que
+                        desarrollaré próximamente.
+                    </p>
+
+                    <span class="technologies">
+                        Próximamente
+                    </span>
+                </article>
+
+            </div>
         </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
+        <section id="contacto" class="contact">
+            <h2 class="section-title">Contacto</h2>
 
             <p>
-                Puedes encontrarme en GitHub y LinkedIn.
+                Estoy disponible para colaborar en proyectos pequeños,
+                páginas web y aplicaciones.
             </p>
+
+            <a
+                class="button button-primary"
+                href="mailto:juansantiagozunigaguerrero@gmail.com"
+            >
+                Enviar correo
+            </a>
         </section>
+
     </main>
 
     <footer>
-        <p>© 2026 Santiago Zúñiga</p>
+        <p>© 2026 Santiago Zúñiga. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
